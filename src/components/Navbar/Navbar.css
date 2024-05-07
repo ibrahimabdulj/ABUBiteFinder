@@ -1,0 +1,126 @@
+
+.nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF3D00;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+}
+.app__navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+}
+.app__logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.app__logo h2{
+    width: 120px;
+    font-size: x-large;
+}
+.app__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+.app__navbar-links li{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.app__navbar-links li :hover{
+    color: var(--color-gray)
+}
+.app__navbar-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app__navbar-login a{
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease; 
+}
+.app__navbar-login a:hover{
+    border-bottom: 1px solid var(--color-grey);
+}
+.app__navbar-login div{
+    width:1px;
+    height: 30px;
+    background-color: var(--color-grey);
+}
+.app__navbar-smallscreens{
+    display: none;
+}
+.app__navbar-smallscreens_overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 25%;
+    background: var(--color-gray);
+    transition: o.5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+.app__navbar-smallscreens-links{
+    height: 100vh;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    list-style: none;
+    background: var(--color-golden);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font-base);
+}
+.overlay__open{
+    cursor: pointer;
+    position: relative;
+    
+
+}
+.small-screens_overlay .overlay__close{
+    color: var(--color-gray);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+
+}
+.app__navbar-smallscreens-links .p__opensans:hover{
+    border: 1px solid var(--color-grey);
+}
+@media screen and (max-width: 1150px){
+    
+    .app__logo h2{
+        width: 250px;
+        height: 100%;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .app__navbar{
+        display: none;
+    }
+    .nav{
+        position: fixed;
+        padding: 0;
+        height: 10vh;
+    }
+    
+    .app__navbar-smallscreens{
+        display: flex;
+    }
+    
+}

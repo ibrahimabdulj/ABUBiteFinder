@@ -1,0 +1,62 @@
+.menuitem__card{
+    width: 280px;
+    height: 48.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;   
+    border-radius: 2rem;
+    background-color: #fff;
+    
+}
+.menuitem__card:hover{
+    border: 2px solid var(--color-grey);
+    transform: translateY(-5px); /* Move the div 5px up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menuitem__img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.item__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rating{
+    color: #F67600;
+}
+.menuitem__info{
+    width: 98.5%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item__name{
+    margin-left: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+.card__button{
+    color:#F67600;
+    background:#F6850033;
+    padding: 2px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    font-size:large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card__button :hover{
+    background:#F67600 ;
+    color: #F6850033;
+}

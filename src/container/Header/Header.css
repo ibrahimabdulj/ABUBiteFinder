@@ -1,0 +1,53 @@
+.app__home {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 2.9rem;
+    background-image: url(..//../assets/img_6601-jollof.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+.app__home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the opacity value as needed */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+  
+.app__home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem;
+    font-size: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: relative; /* Ensure text is on top of the overlay */
+    z-index: 1; /* Ensure text is on top of the overlay */
+}
+  
+.app__home-text h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+  
+.app__home-text p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+  

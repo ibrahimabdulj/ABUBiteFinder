@@ -1,0 +1,33 @@
+.our__services{
+    width: 100%;
+    height: 821px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:830px;
+}
+.our__services p{
+    text-align: center;
+}
+.our__services hr{
+    width: 200px;
+    border: 2px solid #FFC107;
+}
+.services__container{
+    width: 100%;
+    height: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+
+}

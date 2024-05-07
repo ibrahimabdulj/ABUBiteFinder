@@ -1,0 +1,45 @@
+.app__menu{
+    width: 100%;
+    background-color: #3C39391C;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.menu__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.menu__title hr{
+    width: 200px;
+    border: 2px solid #FFC107;
+}
+
+.menu__title p{
+    width: 620px;
+    text-align: center;
+}
+.menu__container{
+    width: 1267px;
+    height: 921px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap:2rem;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.menu__container :hover{
+    transform: translateY(-5px); /* Move the div 5px up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+
+}

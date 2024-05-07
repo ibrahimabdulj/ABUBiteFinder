@@ -1,0 +1,71 @@
+
+.testimonials{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 2.9rem;
+    background-image: url(..//../assets/testimonialsBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    gap: 1rem;
+
+}
+.testimonials h1{
+    color: white;
+}
+.card__container{
+    display: flex;
+    gap: 2rem;
+}
+.testimonials hr{
+    width: 200px;
+    border: 2px solid #FFC107;
+}
+.p__txt{
+    width: 549px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.testimonial__card{
+    width: 325px;
+    height: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+}
+.card__wrap{
+    width: 283px;
+    height: 279px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card__wrap img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover; /* This ensures the entire image is visible */
+    object-position: center; /* Center the image within its container */
+}
+.indiv_ratings{
+    color: #F67600;
+}
+.card__res{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.indiv__name{
+    font-family: fantasy;
+}
+  
